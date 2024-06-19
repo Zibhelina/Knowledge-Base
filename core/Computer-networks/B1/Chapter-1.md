@@ -35,6 +35,24 @@ To ensure consistent understanding of internet protocols such as TCP, IP, HTTP, 
 
 ## Section 1.2 - The Network Edge
 
-Computing devices hooked to the internet are called end systems because they sit at the *edge* of the internet network. The ***access network*** is the first point of entry for end systems to connect to the core network, which serves as the backbone of the internet by handling large-scale data transmission.
+Computing devices hooked to the internet are called end systems because they sit at the *edge* of the internet network. The ***access network*** is the connection between an end system and the first router it connects to. It serves as the first step for end systems to connect to the core network, which serves as the backbone of the internet by handling large-scale data transmission.
 
 End systems are also referred to as hosts because they *host* application programs. There are two kinds of hosts: clients and servers. While clients are commonly smartphones and PCs, servers tend to be more powerful machines, like large data centers.
+
+The two main types of broadband access for homes are **digital subscriber line (DSL)** and cable. With DSL, homes get internet access from the same local telephone company that provides their phone service, meaning the telephone company is also the internet service provider (ISP).
+
+A **DSL modem** in the home uses the existing phone line to send and receive data. This data is converted into high-frequency tones and then sent to a **splitter**. The splitter separates the data signals from the telephone signals, allowing the data signals to be sent over the telephone line
+
+.
+
+At the **local telephone company's central office (CO)**, the data signals reach a device called a **DSLAM**. The DSLAM separates the data and phone signals, sending the data into the Internet. The splitter also works in the opposite direction, receiving data from the DSLAM and directing it appropriately as internet and telephone signals within the home.
+
+Hundreds or even thousands of households connect to a single DSLAM, enabling efficient data management and internet access.
+
+*How does broadband access compare to cable?*  Cable is generally faster and has lower latency compared to DSL but can be expensive and less reliable during peak times. DSL is more widely available in rural areas, offers more consistent speeds, and is often more affordable.
+
+DSL transmission rates generally follow the same standards, defined by international organizations such as the International Telecommunication Union (ITU) and the American National Standards Institute (ANSI). These standards specify a range of maximum transmission rates, with downstream rates typically much faster than upstream rates, resulting in asymmetric access. Downstream refers to data sent from the internet to your home (like downloading files), while upstream refers to data sent from your home to the internet (like uploading files). These are considered "maximum transmission rates" because actual speeds are often lower. This can be due to service providers offering higher speeds at higher prices or because of technical factors like greater distances from the central office reducing the transmission rates.
+
+***Cable internet access*** utilizes the cable TV company's infrastructure, providing internet from the same company. Fiber optics connect the ***cable head end*** to ***neighborhood junctions***, which use coaxial cables to reach homes, supporting 500 to 5,000 homes per junction. This system, called ***hybrid fiber coax (HFC)***, requires cable modems that connect to the home PC via Ethernet. The ***Cable Modem Termination System (CMTS)*** at the cable head end converts analog signals from the modems back into digital format. Similar to DSL, cable modems divide the network into downstream and upstream channels, with typically higher rates for downstream for the same reasons.
+
+In cable internet systems, both downstream and upstream channels are shared mediums. Downstream, the head end broadcasts data to all homes on the network segment, leading to reduced speeds for each user if many are downloading simultaneously. Upstream, homes share the same channel to send data back to the head end, causing potential collisions when multiple homes transmit simultaneously. To prevent collisions and manage data flow, distributed multiple access protocols are used, ensuring coordinated transmissions and maintaining fair bandwidth distribution among users.
